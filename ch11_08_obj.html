@@ -1,0 +1,42 @@
+<body>
+    <p>[Park's Car]</p>
+    <p id="park1"></p>
+    <p id="park2"></p>
+    <p id="park3"></p>
+    <p>[Lee's Car]</p>
+    <p id="data1"></p>
+    <p id="data2"></p>
+    <p id="data3"></p>
+    <p id="data4"></p>
+    <script>
+        function Car(name, color, speed){
+            this.name=name;
+            this.color=color;
+            this.speed=speed;
+            this.speedup=function(){
+                return this.speed+10;
+            };
+            this.speeddown=function(){
+                return this.speed-10;
+            };
+        }
+        var Parkcar=new Car('Tesla', 'blue', 100);
+        var Leecar=new Car('Jeep', 'red', 70);
+        Leecar.price='3천만 원';
+        delete Leecar.color;
+        var cname=document.getElementById("park1");
+        cname.textContent='자동차 이름 : ' + Parkcar.name;
+        var colname=document.getElementById("park2");
+        colname.textContent='자동차 색상 : ' + Parkcar.color;
+        var cspeed=document.getElementById("park3");
+        cspeed.textContent='자동차 속도 : ' + Parkcar.speedup;
+        var cname=document.getElementById("data1");
+        cname.textContent='자동차 이름 : ' + Leecar.name;
+        var colname=document.getElementById("data2");
+        colname.textContent='자동차 색상 : ' + Leecar.color;
+        var cspeed=document.getElementById("data3");
+        cspeed.textContent='자동차 속도 : ' + Leecar.speedup;
+        var cspeed=document.getElementById("data4");
+        cspeed.textContent='자동차 가격 : ' + Leecar.price;
+    </script>
+</body>
