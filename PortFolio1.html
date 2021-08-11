@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <title>Portfolio1</title>
+</html>
+<body>
+   <form>
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <p>ID : <input type="text" name="ID" size="15" required></p>
+            <p>생년월일 : <input type="date" name="birth"></p>
+            <p>성별 : <input type="radio" name="sex" value="male">남자
+                <input type="radio" name="sex" value="female">여자</p>
+            <p>E-mail : <input type="email" name="myemail"></p>
+            <p>메일수신 : <input type="radio" name="email">수신동의
+                        <input type="radio" name="email">수신거부</p>
+            <p>핸드폰 : <select name="subjects">
+               <option value="010" selected>010</option>
+               <option value="010" >011</option>
+               <option value="010" >012</option>
+                </select>-<input type="text" size="10">-<input type="text" size="10"></p>
+            <p>직업 : <select name="subjects">
+                <option value="job" selected>학생</option>
+                <option value="job" >교사</option>
+                </select></p>
+            <p>취미 : <input type="checkbox" name="hobby" value="Shopping" vertical align>쇼핑
+                <input type="checkbox" name="hobby" value="Internet" vertical align>인터넷
+                <input type="checkbox" name="hobby" value="Listening to music" vertical align>음악감상
+                <input type="checkbox" name="hobby" value="Reading" vertical align>독서
+                <input type="checkbox" name="hobby" value="Sports" vertical align>스포츠</p>
+            <p>자기소개 : <textarea rows="10" cols="25"></textarea></p>
+       </fieldset>
+    </form>
+    <input type="submit" value="등록">
+    <input type="reset" value="초기화">
+</body>
