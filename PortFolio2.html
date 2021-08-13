@@ -1,0 +1,175 @@
+
+<html>
+    <head>
+        <style>
+            .flex-container{
+                float: left;
+                display:flex , inline;
+                padding:20px;
+                flex-wrap: wrap; /* 내용이 밑으로 밀리면서 보여줌*/ 
+                margin: 20px;
+                justify-content: space-between;
+            }
+
+            .item{
+                border:2px solid red;
+                background-color: red;
+                margin: 20px;
+                width: 300px;
+                height:300px;
+            }
+            .item1{
+                border: 2px solid blue;
+                margin: 20px;
+                width: 500px;
+                height: 300px;
+            }
+            @media screen and (min-width: 1200px){
+                .PortFolio2_contentPane-allImg{
+                    float: left;
+                }
+                .PortFolio2__contentPane-redbox{
+                    width: 220px;
+                    justify-content: space-between
+                }
+            }
+            @media screen and (min-width: 655px) and (max-width: 690){
+                .PortFolio2__contentPane-redbox{
+                    flex-direction: column;
+                }
+            }
+            @media screen and (min-width: 1px) and (max-width: 650px){
+                .PortFolio2__contentPane-allImg{
+                    display: inline;
+                    padding: 0;
+                }
+                .PortFolio2__contnetPane-redbox{
+                    flex-direction: column;
+                    float: left;
+                    margin-right: 10px;
+                }
+                .PortFolio2__contentPane-img{
+                    float: left;
+                }
+                .PortFolio2__contentPane-text{
+                    padding: 10px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="neo">
+                <div class="item">1</div>
+                <div class="item">2</div>
+            </div>
+            <img src="sky.jpg" alt="image" class="item1">
+        </div>
+        <div class="item2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</div>
+    </body>
+</html>
+
+
+
+<!--
+<html>
+    <head>
+        <style>
+            h2{
+            margin-top: 10;
+             text-align: center;  
+             color: violet;
+             margin-bottom: 0;
+            }
+            h5{
+                margin-top :5;
+                text-align: center;                
+            }
+            .container{
+                padding: 15px;
+                background-color: lightgrey;
+                height:100%;
+            }
+            .firstbox{
+                display: flex;
+              
+                height:30%;
+                justify-content: space-evenly;
+            }
+
+            .secondbox{
+                display: flex;
+                
+                height:30%;
+                justify-content: space-evenly;
+            }
+
+            .item{              
+                width:30%;
+            }
+
+            .button{
+                display: flex;
+                text-align: center;
+                width:200px;
+                height:50px;
+                
+            }
+            .container2 {
+                margin-top: 1%;
+                height: 5%;
+                position: relative;
+                
+                }
+
+                .vertical-center {
+                    display: flex;
+                    justify-content: center;
+                }
+                button{
+                    background-color: pink;
+                    height:40px;
+                    width:250px;
+                    color:white;
+                    border: solid 2px grey;
+                    border-radius: 12px;
+                }
+        </style>
+    </head>
+    <body>
+       <div class="container"> 
+           <h2>Meet GuideBooks</h2>
+           <h5>Discover hundreads of local spots recommend by Aribnb hosts.</h5>
+            <div class="firstbox">
+                <div class="item"><img src="../ch03/image/new-york.jpg" style="height:100%; width:100%"></div>
+                <div class="item"><img src="../ch03/image/napa.jpg" style="height:100%; width:100%"></div>
+                <div class="item"><img src="../ch03/image/london.jpg" style="height:100%; width:100%"></div>
+            </div>
+
+            <div class="container2">
+                <div class="vertical-center">
+                  <button>See All GuideBooks</button>
+                </div>
+              </div>
+   
+            <h2>Just for the weekend</h2>
+            <h5>Discover new, inspiring please close to home. </h5>
+            <div class="secondbox">
+                <div class="item"><img src="../ch03/image/san-francisco.jpg" style="height:100%; width:100%"></div>
+                <div class="item"><img src="../ch03/image/san-francisco-2.jpg" style="height:100%; width:100%"></div>
+                <div class="item"><img src="../ch03/image/sonoma.jpg" style="height:100%; width:100%"></div>
+            </div>
+            <div class="container2">
+                <div class="vertical-center">
+                  <button>See All Destunations</button>
+                </div>
+              </div>
+        </div>
+        </body>
+</html>
+[출처] 실습 연습 CSS|작성자 글쎄
+
+
+
+-->
