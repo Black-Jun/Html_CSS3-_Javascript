@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PortFolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet" type="text/css" />
+        <!--생략-->
+        <!--초기화-->
+        <style>
+            *{margin: 0; padding: 0;}
+            body{font-family: sans-serif;}
+            li{list-style: none;}
+            a{text-decoration: none;}
+            img{border: 0;}
+        </style>
+        <!--헤더-->
+        <style>
+            #main_header {
+/*                중앙정렬*/
+                width: 960px; margin: 0 auto;
+                
+/*                절대 좌표*/
+                height: 160px;
+                position: relative;
+                background-image: url(sky.jpg);
+                background-size: cover;
+                border-radius: 15px;
+            }
+            #main_header > #title {
+                position: absolute;
+                left: 20px; top: 30px;
+            }
+            #main_header > #main_lnb {
+                position: absolute;
+                right: 0; bottom: 10px;
+            }
+        </style>
+        <!--타이틀-->
+        <style>
+            #title{
+                font-family: 'Coiny', cursive;
+            }
+        </style>
+<!--        메뉴-->
+        <style>
+            #main_lnb > ul{overflow: hidden;}
+            #main_lnb > ul > li{float: left;}
+            #main_lnb > ul > li > a {
+                display: block;
+                padding: 10px 20px;
+                border: 1px solid black;
+                background-color: black;
+                color: gray;
+            }
+            #main_lnb > ul > li > a:hover{
+                background: black;
+                color: white;
+            }
+            #main_lnb > ul > li:first-child > a {border-radius: 10px 0 0 10px;}
+            #main_lnb > ul > li:last-child > a {border-radius: 0 10px 10px 0;}
+        </style>
+        <!--콘텐츠-->
+        <style>
+            #content{
+/*                중앙 정렬*/
+                width: 960px; margin: 0 auto;
+                
+/*                수행 레이아웃 구성*/
+                overflow: hidden;
+            }
+            
+            #content > #main_section{
+                width: 750px;
+                float: left;
+            }
+            #content > #main_aside{
+                width: 200px;
+                float: right;
+            }
+        </style>
+        <!--본문-->
+        <style>
+            #main_section > article.main_article{
+                margin-bottom: 10px;
+                padding: 20px;
+                
+            }
+        </style>
+<!--        사이드-->
+        <style>
+            #side {
+                border: 2px solid black;
+                background-color: lightgray;
+            }
+        </style>    
+        <!--푸터-->
+        <style>
+            #main_footer {
+                width: 960px; margin: 0 auto;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding: 10px;
+                border: 1px solid black;
+                text-align: center;
+                background: white;
+                background: radial-gradient(gray, white);
+            }
+        </style>
+    </head>
+</html>
+<body>
+    <header id="main_header">
+        <div id="title">
+            <h1>Rint Development</h1>
+        </div>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">안내</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">방법</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="main_section">
+            <article class="main_article">
+                <h1>Main Article</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+                <img src="sky.jpg" width="705" height="250">
+            </article>   
+        </section>
+        <aside>
+            <dl id="side">
+                <p>●알림마당<br>
+                    여기 이곳은 밑에 사진을 설명하는 곳 입니다. 아래의 장소는 이 지역에서 제일 유명한 장소를 올렸습니다.
+                </p>
+                <img src="sky.jpg" width="200">
+                <img src="sky.jpg" width="200">
+                <img src="sky.jpg" width="200">
+             </dl>
+        </aside>
+    </div>
+    <footer id="main_footer">
+        <h3>Jun Seok Park</h3>
+        <address>mylovetjrl@naver.com<br>Tel.010-0000-1111</address>
+    </footer>
+</body>
