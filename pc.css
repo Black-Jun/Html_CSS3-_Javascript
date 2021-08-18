@@ -1,0 +1,83 @@
+/*헤더*/
+            #main_header {
+/*                중앙정렬*/
+                width: 95vw; margin: 0 auto;
+                
+/*                절대 좌표*/
+                height: 160px;
+                position: relative;
+                background-image: url(sky.jpg);
+                background-size: cover;
+/*                border-radius: 15px;*/
+            }
+            #main_header > #title {
+                left: 20px; top: 30px;
+            }
+            #main_header > #main_lnb {
+                right: 0; bottom: 10px;
+            }
+            
+/*            타이틀*/
+            #title{
+                font-family: 'Coiny', cursive;
+            }
+            
+/*            메뉴*/
+            #main_lnb > ul{overflow: hidden;}
+            #main_lnb > ul > li{float: left;}
+            #main_lnb > ul > li > a {
+                display: block;
+                padding: 10px 20px;
+                border: 1px solid black;
+                background-color: black;
+                color: gray;
+            }
+            #main_lnb > ul > li > a:hover{
+                background: black;
+                color: white;
+            }
+            #main_lnb > ul > li:first-child > a {border-radius: 10px 0 0 10px;}
+            #main_lnb > ul > li:last-child > a {border-radius: 0 10px 10px 0;}
+            
+/*             콘텐츠*/
+            #content{
+/*                중앙 정렬*/
+                width: 960px; margin: 0 auto;
+                
+/*                수행 레이아웃 구성*/
+                overflow: hidden;
+            }
+            
+            #content > #main_section{
+                width: 750px;
+                float: left;
+            }
+            #content > #main_aside{
+                width: 200px;
+                float: right;
+            }
+            
+/*            본문*/
+            #main_section > article.main_article{
+                margin-bottom: 10px;
+                padding: 20px;  
+            }
+            
+/*            사이드*/
+            #side {
+                border: 2px solid black;
+                background-color: lightgray;
+            }
+            
+/*            푸터*/
+            #main_footer {
+                width: 95vw; margin: 0 auto;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding: 10px;
+                border: 1px solid black;
+                text-align: center;
+                background: white;
+                background: radial-gradient(gray, white);
+            }
+            
