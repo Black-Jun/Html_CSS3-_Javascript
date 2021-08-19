@@ -1,0 +1,30 @@
+<!--모바일용 타이틀-->
+            #title1{
+                color: white;
+                background-color: black;
+            }
+            
+            <!--모바일용 헤더-->
+            #header1{
+                background-image: url(sky.jpg);
+                width: 500px; margin: 0 auto;
+            }
+            
+            <!-- 모바일용 바디-->
+            #article1{
+                border: 2px solid black;
+                width: 100%;
+                height: 250px;
+            }
+            #article2{
+                border: 2px solid black;
+                width: 100%;
+                height: 300px;
+            }
+            
+            <!--모바일용  푸터-->
+            #footer1{
+                color: white;
+                background-color: black;
+            }
+            
